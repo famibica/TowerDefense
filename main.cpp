@@ -7,8 +7,10 @@
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(1000, 600, 32), "Tower Defense", sf::Style::Default);
+
 	sf::RectangleShape shape(sf::Vector2f(100, 1000));
 	shape.setFillColor(sf::Color::Green);
+
 	Map* mapa = new Map(1);
 	Wave* wave = new Wave();
 	window.setFramerateLimit(120);
@@ -30,7 +32,7 @@ int main()
 		window.clear();
 		window.draw(mapa->BackgroundSprite);
 		window.draw(shape);
-		for (int i = 1; i < 5; i++)
+		for (int i = 0; i < wave->WaveMaxSize; i++)
 		{
 			window.draw(wave->EnemyWave[i].EnemySprite);
 		}

@@ -9,6 +9,8 @@ public:
 
 	sf::Sprite EnemySprite;
 	void MoveTo();
+	void TestHit();
+	void SetTexture();
 	bool GetIsDead();
 	int InitialLife = 10;
 	sf::Vector2f GetPosition();
