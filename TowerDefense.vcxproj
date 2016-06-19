@@ -84,6 +84,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cannon.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="main.cpp" />
@@ -92,6 +93,7 @@
     <ClCompile Include="WaveControl.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cannon.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Level.h" />
     <ClInclude Include="Map.h" />

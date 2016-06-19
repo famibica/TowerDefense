@@ -5,7 +5,7 @@ Map::Map(int level)
 {
 	if (level == 1)
 	{
-		if (!BackgroundTexture.loadFromFile("C:/Users/matheusbica/Desktop/texture.png"))
+		if (!BackgroundTexture.loadFromFile("C:/ImagensProjetoTD/ground.png"))
 			throw "Failure!";
 		else
 			BackgroundSprite.setTexture(BackgroundTexture);

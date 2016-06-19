@@ -1,7 +1,12 @@
 #include <string>
 #include "Enemy.h"
+#include "Wave.h"
 
-Enemy::Enemy(){}
+Enemy::Enemy()
+{
+	EnemyTexture.loadFromFile("C:/Users/matheusbica/Desktop/enemy.png");
+	EnemySprite.setTexture(EnemyTexture);
+}
 
 void Enemy::MoveTo()
 {
@@ -29,8 +34,6 @@ sf::Vector2f Enemy::GetPosition()
 
 void Enemy::SetTexture()
 {
-	if (!EnemyTexture.loadFromFile("C:/Users/matheusbica/Desktop/enemy.png"))
-		throw "Failure!";
-	else
-		EnemySprite.setTexture(EnemyTexture);
+	EnemyTexture.loadFromFile("C:/Users/matheusbica/Desktop/enemy.png");
+	EnemySprite.setTexture(EnemyTexture);
 }
