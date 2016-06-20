@@ -36,6 +36,12 @@
     <ClCompile Include="Cannon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Shoot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Map.h">
@@ -54,6 +60,12 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Cannon.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shoot.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullets.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

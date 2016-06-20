@@ -4,8 +4,28 @@
 
 Enemy::Enemy()
 {
+	//if the enemy is Basic
 	EnemyTexture.loadFromFile("C:/Users/matheusbica/Desktop/enemy.png");
 	EnemySprite.setTexture(EnemyTexture);
+}
+
+Enemy::Enemy(int level)
+{
+	//if the enemy has level
+	switch (level){
+	case 1:
+		EnemyTexture.loadFromFile("C:/ImagensProjetoTD/coxinha1.png");
+		EnemySprite.setTexture(EnemyTexture);
+		break;
+	case 2:
+		EnemyTexture.loadFromFile("C:/ImagensProjetoTD/coxinha2.png");
+		EnemySprite.setTexture(EnemyTexture);
+		break;
+	case 3:
+		EnemyTexture.loadFromFile("C:/ImagensProjetoTD/bolsomito.png");
+		EnemySprite.setTexture(EnemyTexture);
+		break;
+	}
 }
 
 void Enemy::MoveTo()

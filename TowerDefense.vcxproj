@@ -84,19 +84,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bullets.cpp" />
     <ClCompile Include="Cannon.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Shoot.cpp" />
     <ClCompile Include="Wave.cpp" />
     <ClCompile Include="WaveControl.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bullets.h" />
     <ClInclude Include="Cannon.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Level.h" />
     <ClInclude Include="Map.h" />
+    <ClInclude Include="Shoot.h" />
     <ClInclude Include="Wave.h" />
     <ClInclude Include="WaveControl.h" />
   </ItemGroup>

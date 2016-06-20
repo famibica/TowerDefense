@@ -11,6 +11,7 @@ public:
 	void MoveTo(sf::Vector2i);
 	void SetTexture();
 	sf::Vector2f GetPosition();
+	float GetRotation();
 
 private:
 	sf::Texture CannonTexture;

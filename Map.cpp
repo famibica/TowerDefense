@@ -9,15 +9,23 @@ Map::Map(int level)
 			throw "Failure!";
 		else
 			BackgroundSprite.setTexture(BackgroundTexture);
+
+		if (!BackgroundCongressTexture.loadFromFile("C:/ImagensProjetoTD/congresso.png"))
+			throw "Failure!";
+		else
+			BackgroundCongressSprite.setTexture(BackgroundCongressTexture);
+			
+		if (!WaterPumpTexture.loadFromFile("C:/ImagensProjetoTD/water_pump.png"))
+			throw "Failure!";
+		else
+		{
+			BackgroundWaterPumpSprite.setTexture(WaterPumpTexture);
+			BackgroundWaterPumpSprite.setPosition(70.0f,330.0f);
+		}
+
+		if (!CongressFloorTexture.loadFromFile("C:/ImagensProjetoTD/congresso_floor.png"))
+			throw "Failure!";
+		else
+			BackgroundCongressFloorSprite.setTexture(CongressFloorTexture);
 	}
-}
-
-void Map::MoveTo(sf::Vector2f new_position)
-{
-	// impl.
-}
-
-bool Map::GetIsDead()
-{
-	return isDead;
 }

@@ -7,18 +7,14 @@ public:
 	Map(int level);
 	~Map(){}
 
-	sf::Texture Background;
 	sf::Sprite BackgroundSprite;
-
-	void MoveTo(sf::Vector2f new_position);
-
-	bool GetIsDead();
-
-	sf::Vector2f GetPosition();
+	sf::Sprite BackgroundCongressSprite;
+	sf::Sprite BackgroundWaterPumpSprite;
+	sf::Sprite BackgroundCongressFloorSprite;
 
 private:
 	sf::Texture BackgroundTexture;
-	sf::Vector2f position;
-	bool isDead;
-
+	sf::Texture BackgroundCongressTexture;
+	sf::Texture WaterPumpTexture;
+	sf::Texture CongressFloorTexture;
 };

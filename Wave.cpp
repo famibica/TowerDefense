@@ -5,10 +5,13 @@
 Wave::Wave()
 {
 	for (int i = 0; i < WaveMaxSize; i++)
-	{
-		
-		EnemyWave.push_back(new Enemy());
-		//EnemyWave[i]->.SetTexture();
+	{	
+		int min = 1;
+		int max = 3;
+		int level = min + (rand() % (int)(max - min + 1));
+
+		EnemyWave.push_back(new Enemy(level));
+		//EnemyWave[i]->.SetTexture();		
 		EnemyWave[i]->EnemySprite.setPosition(1000.0f+((1+i)*+80.0f), 500.0f);
 	}
 }
