@@ -6,7 +6,7 @@
 class Wave
 {
 public:
-	Wave();
+	Wave(int);
 	~Wave(){}
 
 	void MoveTo();
@@ -14,9 +14,9 @@ public:
 	sf::Vector2f GetPosition();
 	int WaveMaxSize = 5;
 	std::vector<Enemy*> EnemyWave;
+	float lane;
 
 private:
 	sf::Vector2f position;
 	bool isWaveDead;
-
 };

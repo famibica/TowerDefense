@@ -14,12 +14,12 @@ public:
 	void TestHit();
 	void SetTexture();
 	bool GetIsDead();
+	bool SetIsDead(bool);
 	int InitialLife = 10;
 	sf::Vector2f GetPosition();
-
 
 private:
 	sf::Texture EnemyTexture;
 	sf::Vector2f position;
-	bool isDead;
+	bool isDead = false;
 };

@@ -13,6 +13,8 @@ public:
 	void SetTexture();
 	sf::Vector2f GetPosition();
 	void SetInitialPosition(sf::Vector2f, float, sf::Vector2f);
+	bool draw = true;
+
 private:
 	sf::Vector2f FinalPosition;
 	sf::Texture BulletsTexture;

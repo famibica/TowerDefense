@@ -87,9 +87,9 @@
     <ClCompile Include="Bullets.cpp" />
     <ClCompile Include="Cannon.cpp" />
     <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="Level.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Shoot.cpp" />
     <ClCompile Include="Wave.cpp" />
     <ClCompile Include="WaveControl.cpp" />
@@ -98,11 +98,34 @@
     <ClInclude Include="Bullets.h" />
     <ClInclude Include="Cannon.h" />
     <ClInclude Include="Enemy.h" />
-    <ClInclude Include="Level.h" />
     <ClInclude Include="Map.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Shoot.h" />
     <ClInclude Include="Wave.h" />
     <ClInclude Include="WaveControl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bolsomito.png" />
+    <Image Include="boss.png" />
+    <Image Include="cannon.png" />
+    <Image Include="\ImagensProjetoTD\congresso.png" />
+    <Image Include="..\..\..\..\..\..\..\ImagensProjetoTD\congresso_floor.png" />
+    <Image Include="..\..\..\..\..\..\..\ImagensProjetoTD\coxinha1.png" />
+    <Image Include="..\..\..\..\..\..\..\ImagensProjetoTD\coxinha2.png" />
+    <Image Include="..\..\..\..\..\..\..\ImagensProjetoTD\ganhou.png" />
+    <Image Include="..\..\..\..\..\..\..\ImagensProjetoTD\ground.png" />
+    <Image Include="..\..\..\..\..\..\..\ImagensProjetoTD\heart.png" />
+    <Image Include="..\..\..\..\..\..\..\ImagensProjetoTD\perdeu.png" />
+    <Image Include="..\..\..\..\..\..\..\ImagensProjetoTD\shoot.png" />
+    <Image Include="..\..\..\..\..\..\..\ImagensProjetoTD\shoot_2.png" />
+    <Image Include="..\..\..\..\..\..\..\ImagensProjetoTD\tower.png" />
+    <Image Include="..\..\..\..\..\..\..\ImagensProjetoTD\water_pump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Brazil8bits.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\..\..\..\..\..\ImagensProjetoTD\ka1.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

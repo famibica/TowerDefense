@@ -1,5 +1,8 @@
 #include <string>
 #include "Map.h"
+#include "Wave.h"
+#include "WaveControl.h"
+#include "Enemy.h"
 
 Map::Map(int level)
 {
@@ -27,5 +30,23 @@ Map::Map(int level)
 			throw "Failure!";
 		else
 			BackgroundCongressFloorSprite.setTexture(CongressFloorTexture);
+
+		if (!HeartTexture.loadFromFile("C:/ImagensProjetoTD/heart.png"))
+			throw "Failure!";
+		else
+		{
+			HeartSprite.setTexture(HeartTexture);
+			HeartSprite.setPosition(5.0f, 530.0f);
+		}	
+
+		if (!BackgroundLoseTexture.loadFromFile("C:/ImagensProjetoTD/perdeu.png"))
+			throw "Failure!";
+		else
+			BackgroundLoseSprite.setTexture(BackgroundLoseTexture);
+
+		if (!BackgroundWinTexture.loadFromFile("C:/ImagensProjetoTD/ganhou.png"))
+			throw "Failure!";
+		else
+			BackgroundWinSprite.setTexture(BackgroundWinTexture);
 	}
 }

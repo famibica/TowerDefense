@@ -4,8 +4,8 @@
 
 Enemy::Enemy()
 {
-	//if the enemy is Basic
-	EnemyTexture.loadFromFile("C:/Users/matheusbica/Desktop/enemy.png");
+	//if the enemy is Boss!
+	EnemyTexture.loadFromFile("C:/ImagensProjetoTD/boss.png");
 	EnemySprite.setTexture(EnemyTexture);
 }
 
@@ -43,6 +43,14 @@ void Enemy::TestHit()
 
 bool Enemy::GetIsDead()
 {
+	return isDead;
+}
+
+bool Enemy::SetIsDead(bool kill)
+{
+	if (kill == true)
+		isDead = true;
+
 	return isDead;
 }
 
